@@ -6,55 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta name="keywords" content="Rock, Indie, Albúm, Strokes, Banda, Videos, Música">
+    <meta name="description" content="Bienvenidos a la página no oficial de The Strokes. Nos puede consultar cualquier duda que le surja.">
     <link rel="stylesheet" href="../css/bootsrap/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../media/imagenes/logo5.png">
     <title>The Strokes/Consultas</title>
 </head>
 <body class="fondoCons"> 
+  
+  <header>
 
-  <h1 class="titulos">Consultas</h1>
-
-  <div>
-    <ul class="menuTodos">
-      <li><a href="../index.html">The Strokes</a></li>
-      <li><a href="../pages/inicio.html">Banda</a></li>
-      <li><a href="../pages/merchandising.html">Merchandising</a></li>
-      <li><a href="../pages/albums.html">Álbum</a></li>
-    </ul>
-  </div>
-
-  <div class="container">
-    <div class="form-floating mb-3" >
-      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-      <label for="floatingInput">Nombre</label>
+    <h1 class="titulos">Consultas</h1>
+    <nav>
+      <a href="../index.html">The Strokes</a>
+      <a href="./inicio.html">Banda</a>
+      <a href="./merchandising.html">Merchandising</a>
+      <a href="./fechas.html">Fechas</a>
+    </nav> 
+  
+  </header>
+  
+  <main>
+    <div class="container">
+      <div class="form-floating mb-3" >
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Nombre</label>
+      </div>
+      <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Apellido</label>
+      </div>
+  
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Mail</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="carlos@gmail.com">
+      </div>
+  
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+  
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+        <label class="form-check-label" for="flexCheckIndeterminate">
+          ¿Desea recibir novedades de la banda?
+        </label>     
+      </div>
+  
+      <input type="checkbox" class="btn-check" id="btn-check-2" checked autocomplete="off">
+      <label class="btn btn-primary" for="btn-check-2"><em>Enviar</em></label>
+  
     </div>
-    <div class="form-floating">
-      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-      <label for="floatingPassword">Apellido</label>
+  </main>
+
+  <footer class="footer2">
+    <div class="copy">
+        <p>2021 Copyright <img src="../media/imagenes/-copyright_90662.png" class="imgFooter"></p>
     </div>
-
-    <div class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label">Mail</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="carlos@gmail.com">
+    <div class="footerRedes2">
+        <a href="https://www.instagram.com/thestrokes/" target="_blank"><img src="../media/imagenes/instagram.png" alt="instagram" class="imgFooter"></a>
+        <a href="https://twitter.com/thestrokes" target="_blank"><img src="../media/imagenes/twitter.png" alt="twitter" class="imgFooter"></a>
+        <a href="https://www.facebook.com/thestrokes" target="_blank"><img src="../media/imagenes/facebook.png" alt="facebook" class="imgFooter"></a>
+        <a href="https://www.youtube.com/user/thestrokes/videos" target="_blanket"><img src="../media/imagenes/youtube.png" alt="youtube" class="imgFooter"></a>
+        <a href="https://open.spotify.com/artist/0epOFNiUfyON9EYx7Tpr6V" target="_blanket"><img src="../media/imagenes/spotify.png" alt="spotify" class="imgFooter"></a>
     </div>
-
-    <div class="mb-3">
-      <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-    </div>
-
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
-      <label class="form-check-label" for="flexCheckIndeterminate">
-        ¿Desea recibir novedades de la banda?
-      </label>     
-    </div>
-
-    <input type="checkbox" class="btn-check" id="btn-check-2" checked autocomplete="off">
-    <label class="btn btn-primary" for="btn-check-2"><em>Enviar</em></label>
-
-  </div>
+</footer>
 
 </body>
 </html>

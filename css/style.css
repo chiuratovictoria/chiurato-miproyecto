@@ -13,16 +13,15 @@
 .letraHist p{
     @include sizes (500px, 200px)
 }*/
+@import url("https://fonts.googleapis.com/css?family=Oswald:500");
 .titulos {
   text-align: center;
   color: white;
   background-color: #611212;
   font-family: 'Spartan', sans-serif;
   text-transform: uppercase;
-  font-weight: bold; }
-
-table tr th {
-  color: darkred; }
+  font-weight: bold;
+  position: relative; }
 
 h3 p {
   color: darkslategray;
@@ -41,58 +40,164 @@ div label {
   background-size: cover; }
 
 .fondoMerchandising {
-  background-image: url("../media/imagenes/fondo-naranj.svg");
-  background-repeat: no-repeat;
-  background-size: cover; }
+  background-color: white; }
 
+/*FOOTERS*/
 .footer {
   display: flex;
-  margin-top: 1px;
-  clear: left;
+  margin-top: 5px;
+  clear: lecenterft;
   flex-direction: row;
-  justify-content: flex-end;
-  align-content: flex-end;
+  justify-content: center;
+  align-content: center;
   padding-top: 500px; }
 
 .imgFooter {
-  width: 25px; }
+  width: 20px;
+  grid-template-areas: img; }
 
 .footerRedes a {
-  list-style-type: none;
-  color: black;
-  text-decoration: none;
-  display: inline;
   margin: 5px; }
 
-/*MENU CON SUBMENU*/
-ul {
-  list-style-type: none; }
-  ul li {
-    display: inline-block;
-    width: 15%;
-    font-size: 15px;
-    padding-left: 115px;
-    position: relative; }
-    ul li ul {
-      display: none;
-      position: absolute; }
-      ul li ul li {
-        display: block; }
-  ul a {
-    color: white;
-    text-decoration: none; }
+.footer2 {
+  display: grid;
+  grid-template-areas: 'copi img footerRedes2';
+  grid-column-gap: 50px;
+  justify-content: center;
+  align-content: center;
+  padding: 50px;
+  background-color: whitesmoke;
+  justify-items: center; }
 
-ul li:hover ul {
-  display: block;
-  background-color: black; }
+.footerRedes2 a {
+  margin: 10px;
+  grid-area: footerRedes2;
+  justify-content: center; }
+
+.copy {
+  grid-area: copi;
+  justify-content: center; }
+
+/*MENU CON SUBMENU*/
+/*ul {
+    list-style-type: none;
+    li {
+        display: inline-block;
+        width: 15%;
+        font-size: 15px;
+        padding-left: 115px;
+        position: relative;
+        /*ul {
+            display: none;
+            position: absolute;
+            li {
+                display: block;
+            }
+        }
+    }
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}*/
+/*ul li:hover ul {
+    display: block;
+    background-color: black;
+}*/
+/*MENU CON DISEÑO*/
+.back {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; }
+
+.thx {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 15px; }
+
+nav {
+  width: 100%;
+  /*position: fixed;*/
+  top: 100px;
+  text-align: center; }
+
+nav a {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #16151b;
+  margin: 0 100px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block; }
+
+nav a:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: #16151b;
+  top: 47%;
+  animation: out 0.1s cubic-bezier(1, 0, 0.58, 0.97) 1 both; }
+
+nav a:hover:before {
+  animation: in 0.1s cubic-bezier(1, 0, 0.58, 0.97) 1 both; }
+
+@keyframes in {
+  0% {
+    width: 0;
+    left: 0;
+    right: auto; }
+  100% {
+    left: 0;
+    right: auto;
+    width: 100%; } }
+
+@keyframes out {
+  0% {
+    width: 100%;
+    left: auto;
+    right: 0; }
+  100% {
+    width: 0;
+    left: auto;
+    right: 0; } }
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+nav a:nth-child(1) {
+  animation: show 0.1s 1.1s ease 1 both; }
+
+nav a:nth-child(2) {
+  animation: show 0.1s 1.2s ease 1 both; }
+
+nav a:nth-child(3) {
+  animation: show 0.1s 1.3s ease 1 both; }
+
+nav a:nth-child(4) {
+  animation: show 0.1s 1.4s ease 1 both; }
+
+nav a:nth-child(5) {
+  animation: show 0.1s 1.5s ease 1 both; }
 
 .rellenoTitulo {
   background-color: blanchedalmond; }
 
 .princFondo {
-  background-image: url("../media/imagenes/fondorojo.jpg");
+  background-image: url(../media/imagenes/fondorojo2.jpg);
   background-repeat: no-repeat;
-  background-position: inherit;
+  background-position: center;
   background-size: cover; }
 
 .fondoBanda {
@@ -187,16 +292,6 @@ ul li:hover ul {
   justify-content: stretch;
   align-content: stretch; }
 
-.fondoAlbum {
-  background-color: #2e0202; }
-
-.tabla {
-  color: white;
-  text-align: center; }
-
-.tabla__cont {
-  text-transform: capitalize; }
-
 .grid {
   display: grid; }
 
@@ -255,28 +350,83 @@ ul li:hover ul {
   .imagen {
     width: 100%; } }
 
-.bem {
-  background-color: lightgoldenrodyellow;
-  line-height: 2;
-  word-spacing: 10px;
-  text-align: justify; }
+/*MERCHANDISING*/
+.grid {
+  display: grid;
+  grid-template-areas: 'buzo1 buzo2 buzo3' 'remera1 remera2 remera3' 'poster1 poster2 poster3';
+  gap: 40px;
+  justify-items: center;
+  grid-template-columns: 20px, 20px, 20px;
+  grid-template-rows: 40px, 40px, 40px; }
 
-.bem__titulo {
+.buzo1 {
+  background-color: beige;
+  grid-area: buzo1;
+  padding: 20px;
+  margin: 20px; }
+
+.buzo2 {
+  background-color: beige;
+  grid-area: buzo2;
+  padding: 20px;
+  margin: 20px; }
+
+.buzo3 {
+  background-color: beige;
+  grid-area: buzo3;
+  padding: 20px;
+  margin: 20px; }
+
+.remera1 {
+  background-color: beige;
+  grid-area: remera1;
+  padding: 20px;
+  margin: 20px; }
+
+.remera2 {
+  background-color: beige;
+  grid-area: remera2;
+  padding: 20px;
+  margin: 20px; }
+
+.remera3 {
+  background-color: beige;
+  grid-area: remera3;
+  padding: 20px;
+  margin: 20px; }
+
+.poster1 {
+  background-color: beige;
+  grid-area: poster1;
+  padding: 20px;
+  margin: 20px; }
+
+.poster2 {
+  background-color: beige;
+  grid-area: poster2;
+  padding: 20px;
+  margin: 20px; }
+
+.poster3 {
+  background-color: beige;
+  grid-area: poster3;
+  padding: 20px;
+  margin: 20px; }
+
+.imagenMerch:hover {
+  transform: scale(1.1, 1.1); }
+
+.info {
+  justify-items: center;
+  text-align: center; }
+  .info :hover {
+    transform: none; }
+
+/*FECHAS*/
+.error {
+  background-color: black; }
+
+.errorLetra {
+  color: white;
   text-align: center;
-  color: black; }
-
-.bem__cont {
-  font-style: italic; }
-
-.bem2 {
-  background-color: lightgoldenrodyellow;
-  line-height: 2;
-  word-spacing: 10px;
-  text-align: justify; }
-
-.bem2__titulo {
-  text-align: center;
-  color: #dace8a; }
-
-.bem2__cont {
-  font-size: 20px; }
+  font-size: 200%; }
