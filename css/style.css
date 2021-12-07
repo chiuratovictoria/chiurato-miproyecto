@@ -1,18 +1,4 @@
 @charset "UTF-8";
-/*$redes: (
-    twitter: blue,
-    youtube: red,
-    instagram: pink,
-
-)*/
-/*@mixin sizes ($widht, $height) {
-    height: $height;
-    width: $widht;
-}
-
-.letraHist p{
-    @include sizes (500px, 200px)
-}*/
 @import url("https://fonts.googleapis.com/css?family=Oswald:500");
 .titulos {
   text-align: center;
@@ -22,6 +8,25 @@
   text-transform: uppercase;
   font-weight: bold;
   position: relative; }
+
+.videoInicio {
+  background-color: black;
+  padding-top: 400px;
+  padding-left: 60px;
+  width: 50%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  margin-top: 60px; }
+  .videoInicio iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 30; }
 
 h3 p {
   color: darkslategray;
@@ -46,11 +51,11 @@ div label {
 .footer {
   display: flex;
   margin-top: 5px;
-  clear: lecenterft;
+  clear: center;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-content: center;
-  padding-top: 500px; }
+  padding-top: 30px; }
 
 .imgFooter {
   width: 20px;
@@ -67,7 +72,8 @@ div label {
   align-content: center;
   padding: 50px;
   background-color: whitesmoke;
-  justify-items: center; }
+  justify-items: center;
+  clear: left; }
 
 .footerRedes2 a {
   margin: 10px;
@@ -78,42 +84,16 @@ div label {
   grid-area: copi;
   justify-content: center; }
 
-/*MENU CON SUBMENU*/
-/*ul {
-    list-style-type: none;
-    li {
-        display: inline-block;
-        width: 15%;
-        font-size: 15px;
-        padding-left: 115px;
-        position: relative;
-        /*ul {
-            display: none;
-            position: absolute;
-            li {
-                display: block;
-            }
-        }
-    }
-    a {
-        color: white;
-        text-decoration: none;
-    }
-}*/
-/*ul li:hover ul {
-    display: block;
-    background-color: black;
-}*/
 /*MENU CON DISEÑO*/
 .back {
-  position: fixed;
+  /*position: fixed;*/
   left: 0;
   top: 0;
   width: 100%;
   height: 100%; }
 
 .thx {
-  position: fixed;
+  /*position: fixed;*/
   left: 50%;
   transform: translateX(-50%);
   bottom: 15px; }
@@ -191,30 +171,17 @@ nav a:nth-child(4) {
 nav a:nth-child(5) {
   animation: show 0.1s 1.5s ease 1 both; }
 
-.rellenoTitulo {
-  background-color: blanchedalmond; }
-
 .princFondo {
-  background-image: url(../media/imagenes/fondorojo2.jpg);
+  background-image: url(../media/imagenes/fondo-strokes.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
 
 .fondoBanda {
-  background-color: black; }
+  background-color: #9e9090; }
 
 .fondoCons {
   background-color: #ebd6bd; }
-
-.tipos {
-  color: cadetblue;
-  transition: background-color 2s; }
-
-.tipos:hover {
-  background-color: bisque; }
-
-.seccion:focus {
-  transform: skew(45deg); }
 
 .letraHist p {
   font-family: 'Cormorant Garamond', serif;
@@ -229,7 +196,7 @@ nav a:nth-child(5) {
   background-color: antiquewhite;
   /*width: 25%;
     height: 40VH;*/
-  float: right;
+  /*float: left;*/
   font-family: 'Cormorant Garamond', serif;
   line-height: 20px;
   word-spacing: 5px;
@@ -237,7 +204,8 @@ nav a:nth-child(5) {
   border: solid 2px gray;
   text-align: justify;
   grid-area: integrantes;
-  overflow: auto;
+  float: left;
+  /*overflow: auto;*/
   width: 400px;
   height: 250px; }
 
@@ -253,7 +221,7 @@ nav a:nth-child(5) {
   background-color: tan;
   /*width: 25%;
     height: 70VH;*/
-  float: right;
+  /*float: left;*/
   font-family: 'Cormorant Garamond', serif;
   line-height: 20px;
   word-spacing: 5px;
@@ -261,7 +229,8 @@ nav a:nth-child(5) {
   border: solid 2px gray;
   text-align: justify;
   grid-area: sencillos;
-  overflow: auto;
+  float: left;
+  /*overflow: auto;*/
   width: 400px;
   height: 400px; }
 
@@ -275,25 +244,19 @@ nav a:nth-child(5) {
   background-color: #dac7ae; }
 
 .imagen {
-  float: left;
-  grid-area: imagen;
-  width: 70%; }
+  display: flex;
+  float: center;
+  justify-content: center;
+  width: 80%;
+  margin: 5%; }
 
-/*.imagen:hover {
-        transform: scale(0.9,1);
-    }*/
-.main {
+.banda {
   display: grid;
-  grid-template-areas: 'historia historia' 'imagen integrantes' 'imagen sencillos';
-  grid-template-columns: 4fr 5fr;
-  grid-template-rows: 100px 500px 200px;
-  grid-column-gap: 1px;
-  grid-row-gap: 1px;
-  justify-content: stretch;
-  align-content: stretch; }
-
-.grid {
-  display: grid; }
+  grid-template-areas: 'sencillos integrantes';
+  grid-template-columns: 200px;
+  justify-items: center;
+  padding: 5%;
+  margin: 5%; }
 
 /*MOBILE*/
 @media only screen and (max-width: 320px) {
@@ -351,13 +314,16 @@ nav a:nth-child(5) {
     width: 100%; } }
 
 /*MERCHANDISING*/
+.merch {
+  text-align: center; }
+
 .grid {
   display: grid;
   grid-template-areas: 'buzo1 buzo2 buzo3' 'remera1 remera2 remera3' 'poster1 poster2 poster3';
   gap: 40px;
   justify-items: center;
   grid-template-columns: 20px, 20px, 20px;
-  grid-template-rows: 40px, 40px, 40px; }
+  grid-template-rows: 20px, 20px, 20px; }
 
 .buzo1 {
   background-color: beige;
@@ -417,6 +383,8 @@ nav a:nth-child(5) {
   transform: scale(1.1, 1.1); }
 
 .info {
+  color: #611212;
+  text-decoration: none;
   justify-items: center;
   text-align: center; }
   .info :hover {
@@ -424,9 +392,17 @@ nav a:nth-child(5) {
 
 /*FECHAS*/
 .error {
-  background-color: black; }
+  background-color: black;
+  background-image: url(../media/imagenes/unnamed.6.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: inherit; }
 
 .errorLetra {
   color: white;
   text-align: center;
   font-size: 200%; }
+
+.errorBoton {
+  position: left;
+  color: lightblue; }
