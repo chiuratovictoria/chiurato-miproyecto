@@ -1,39 +1,32 @@
-@charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Oswald:500");
-.titulos {
-  text-align: center;
-  color: white;
-  background-color: #611212;
-  font-family: 'Spartan', sans-serif;
-  text-transform: uppercase;
-  font-weight: bold;
-  position: relative; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
 .videoInicio {
-  background-color: black;
   padding-top: 400px;
-  padding-left: 60px;
   width: 50%;
   height: 100%;
   position: relative;
   z-index: 1;
-  margin-top: 60px; }
+  margin-top: 60px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 20px #7e0d0d;
+  border-radius: 20px; }
   .videoInicio iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    max-width: 100%;
-    max-height: 100%;
-    z-index: 30; }
+    height: 100%; }
 
 h3 p {
   color: darkslategray;
   background-color: lemonchiffon;
   font-size: 17px; }
 
-   
 h3 {
   color: grey; }
 
@@ -48,131 +41,26 @@ div label {
   background-color: white; }
 
 /*FOOTERS*/
-.footer {
-  display: flex;
-  margin-top: 5px;
-  clear: center;
-  flex-direction: row;
-  justify-content: space-around;
-  align-content: center;
-  padding-top: 30px; }
+.copy p {
+  justify-content: right;
+  text-align: right;
+  color: black; }
+
+.footer1 {
+  margin: 30px; }
+
+.footer2 {
+  justify-content: center;
+  align-content: center; }
+  .footer2 a {
+    margin: 10px; }
 
 .imgFooter {
   width: 20px;
-  grid-template-areas: img; }
-
-.footerRedes a {
-  margin: 5px; }
-
-.footer2 {
-  display: grid;
-  grid-template-areas: 'copi img footerRedes2';
-  grid-column-gap: 50px;
-  justify-content: center;
-  align-content: center;
-  padding: 50px;
-  background-color: whitesmoke;
-  justify-items: center;
-  clear: left; }
-
-.footerRedes2 a {
-  margin: 10px;
-  grid-area: footerRedes2;
   justify-content: center; }
-
-.copy {
-  grid-area: copi;
-  justify-content: center; }
-
-/*MENU CON DISEÑO*/
-.back {
-  /*position: fixed;*/
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%; }
-
-.thx {
-  /*position: fixed;*/
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 15px; }
-
-nav {
-  width: 100%;
-  /*position: fixed;*/
-  top: 100px;
-  text-align: center; }
-
-nav a {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 500;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #16151b;
-  margin: 0 100px;
-  font-size: 16px;
-  letter-spacing: 1px;
-  position: relative;
-  display: inline-block; }
-
-nav a:before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 3px;
-  background: #16151b;
-  top: 47%;
-  animation: out 0.1s cubic-bezier(1, 0, 0.58, 0.97) 1 both; }
-
-nav a:hover:before {
-  animation: in 0.1s cubic-bezier(1, 0, 0.58, 0.97) 1 both; }
-
-@keyframes in {
-  0% {
-    width: 0;
-    left: 0;
-    right: auto; }
-  100% {
-    left: 0;
-    right: auto;
-    width: 100%; } }
-
-@keyframes out {
-  0% {
-    width: 100%;
-    left: auto;
-    right: 0; }
-  100% {
-    width: 0;
-    left: auto;
-    right: 0; } }
-
-@keyframes show {
-  0% {
-    opacity: 0;
-    transform: translateY(-10px); }
-  100% {
-    opacity: 1;
-    transform: translateY(0); } }
-
-nav a:nth-child(1) {
-  animation: show 0.1s 1.1s ease 1 both; }
-
-nav a:nth-child(2) {
-  animation: show 0.1s 1.2s ease 1 both; }
-
-nav a:nth-child(3) {
-  animation: show 0.1s 1.3s ease 1 both; }
-
-nav a:nth-child(4) {
-  animation: show 0.1s 1.4s ease 1 both; }
-
-nav a:nth-child(5) {
-  animation: show 0.1s 1.5s ease 1 both; }
 
 .princFondo {
-  background-image: url(../media/imagenes/fondo-strokes.png);
+  background-image: url(../media/imagenes/fondorojo2.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
@@ -258,135 +146,80 @@ nav a:nth-child(5) {
   padding: 5%;
   margin: 5%; }
 
-/*MOBILE*/
-@media only screen and (max-width: 320px) {
-  body {
-    background-color: #b6d1e7; }
-  main {
-    display: grid;
-    grid-template-areas: 'historia' 'integrantes' 'sencillos';
-    grid-template-rows: 100px;
-    grid-row-gap: 10px;
-    justify-items: center; }
-  .letraHist {
-    width: 200px;
-    height: 100px; }
-  .integrantes {
-    width: 230px;
-    height: 400px; }
-  .sencillos {
-    width: 230px;
-    height: 300px; }
-  .imagen {
-    display: none; }
-  .menuTodos {
-    width: 50%; } }
-
-/* ESCRITORIO */
-@media only screen and (min-width: 768px) {
-  body {
-    background-color: black; } }
-
-/* TABLET */
-@media only screen and (max-width: 767px) and (min-width: 320px) {
-  body {
-    background-color: #e9d3d3; }
-  main {
-    display: grid;
-    grid-template-areas: 'historia historia' 'imagen integrantes' 'imagen sencillos';
-    grid-template-columns: 4fr 5fr;
-    grid-template-rows: 100px 300px 200px;
-    grid-column-gap: 1px;
-    grid-row-gap: 1px; }
-  .imagen {
-    width: 10px; }
-  .letraHist {
-    width: 100%;
-    height: 400px;
-    margin-bottom: 100px;
-    padding-bottom: 100px; }
-  .integrantes {
-    width: 230px;
-    height: 400px; }
-  .sencillos {
-    width: 200px; }
-  .imagen {
-    width: 100%; } }
-
 /*MERCHANDISING*/
 .merch {
-  text-align: center; }
-
-.grid {
-  display: grid;
-  grid-template-areas: 'buzo1 buzo2 buzo3' 'remera1 remera2 remera3' 'poster1 poster2 poster3';
-  gap: 40px;
-  justify-items: center;
-  grid-template-columns: 20px, 20px, 20px;
-  grid-template-rows: 20px, 20px, 20px; }
+  text-align: center;
+  margin: 50px;
+  color: #611212;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 400%;
+  border-top: solid 5px #611212;
+  border-bottom: solid 5px #611212; }
 
 .buzo1 {
   background-color: beige;
-  grid-area: buzo1;
   padding: 20px;
   margin: 20px; }
 
 .buzo2 {
   background-color: beige;
-  grid-area: buzo2;
   padding: 20px;
   margin: 20px; }
 
 .buzo3 {
   background-color: beige;
-  grid-area: buzo3;
   padding: 20px;
   margin: 20px; }
 
 .remera1 {
   background-color: beige;
-  grid-area: remera1;
   padding: 20px;
   margin: 20px; }
 
 .remera2 {
   background-color: beige;
-  grid-area: remera2;
   padding: 20px;
   margin: 20px; }
 
 .remera3 {
   background-color: beige;
-  grid-area: remera3;
   padding: 20px;
   margin: 20px; }
 
 .poster1 {
   background-color: beige;
-  grid-area: poster1;
   padding: 20px;
   margin: 20px; }
 
 .poster2 {
   background-color: beige;
-  grid-area: poster2;
   padding: 20px;
   margin: 20px; }
 
 .poster3 {
   background-color: beige;
-  grid-area: poster3;
   padding: 20px;
   margin: 20px; }
 
+.fotosHidden {
+  overflow: hidden; }
+
+.imagenMerch {
+  filter: grayscale(100%); }
+
 .imagenMerch:hover {
-  transform: scale(1.1, 1.1); }
+  transform: scale(1.1, 1.1);
+  filter: grayscale(0%); }
 
 .info {
   color: #611212;
   text-decoration: none;
   justify-items: center;
-  text-align: center; }
+  text-align: center;
+  padding: 10px;
+  font-family: 'Rajdhani', sans-serif; }
+  .info a {
+    color: #611212; }
   .info :hover {
     transform: none; }
 
@@ -401,8 +234,37 @@ nav a:nth-child(5) {
 .errorLetra {
   color: white;
   text-align: center;
-  font-size: 200%; }
+  font-size: 200%;
+  margin: 2rem; }
 
 .errorBoton {
-  position: left;
-  color: lightblue; }
+  position: left; }
+
+.menu {
+  padding: 20px;
+  font-size: 1rem;
+  text-align: center;
+  justify-items: center;
+  /*
+    width: 35%;*/
+  justify-content: center; }
+
+/*MOBILE*/
+@media only screen and (max-width: 576px) {
+  .error {
+    background-color: black;
+    background-image: url(../media/imagenes/fondo-celular.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: inherit; }
+  .errorLetra {
+    color: white;
+    text-align: center;
+    font-size: 150%;
+    margin: 2rem; }
+  .errorBoton {
+    justify-items: right-end;
+    justify-content: right; } }
+
+/* ESCRITORIO */
+/* TABLET */
