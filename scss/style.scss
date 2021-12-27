@@ -4,13 +4,22 @@
     box-sizing: border-box;
 }
 
+.menu {
+    padding: 20px;
+    margin: 20px;
+    font-size: 110%;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+/* THE STROKES*/
 .videoInicio {
     padding-top: 400px;
     width: 50%;
     height: 100%;
     position: relative;
     z-index: 1;
-    margin-top: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -24,160 +33,155 @@
         height: 100%;
     }
 }
-
-h3 p{
-    color: darkslategray;
-    background-color: lemonchiffon;
-    font-size: 17px;
-}
- 
-
-h3{
-    color: grey;
-}
-    
-div label{
-    color: black
-}
-    
-.fondoCompleto {
-    background-image: url("../media/imagenes/fondo-album.jpg");
-    background-size: cover;
-}
-    
-.fondoMerchandising {
-    background-color: white;
-}   
-
-    /*FOOTERS*/
-
-.copy {
-    p {
-        justify-content: right;
-        text-align: right;
-        color: black;
-    }
-}
-
-.footer1{
-    margin: 30px;
-}
-
-.footer2 {
-    justify-content: center;
-    align-content: center;
-    a {
-        margin: 10px;
-    }
-}
-
-.imgFooter {
-    width: 20px;
-    justify-content: center;
-}
-
-.princFondo{
+.fondoInicio{
     background-image: url(../media/imagenes/fondorojo2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
-    
+/*THE STROKES*/
+
+/*BANDA*/
 .fondoBanda {
-    background-color: rgb(158, 144, 144);
-}
-    
-.fondoCons {
-    background-color: rgb(235, 214, 189);
+    background-color: white(158, 144, 144);
 }
 
-.letraHist p{
-    font-family: 'Cormorant Garamond', serif;
-    background-color: rgb(218, 199, 174);
-    line-height: 20px;
-    word-spacing: 5px;
-    letter-spacing: 2px;
-    text-align: justify;
-    grid-area: historia;
-}
-    
-
-@mixin sizes ($widht, $height) {
-    width: $widht;
-    height: $height;
-}
-
-.integrantes {
-    background-color: antiquewhite;
-    /*width: 25%;
-    height: 40VH;*/
-    /*float: left;*/
-    font-family: 'Cormorant Garamond', serif;
-    line-height: 20px;
-    word-spacing: 5px;
-    letter-spacing: 2px;
-    border: solid 2px gray;
-    text-align: justify;
-    grid-area: integrantes;
-    float: left;
-    /*overflow: auto;*/
-    @include sizes (400px, 250px)
-}
-
-.integrantes__titulo {
-    color: lightblue;
-    text-align: center;
-}
-
-.sencillos__titulo {
-    color: lightblue;
-    text-align: center;
-}
-
-.sencillos {
-    background-color: tan;
-    /*width: 25%;
-    height: 70VH;*/
-    /*float: left;*/
-    font-family: 'Cormorant Garamond', serif;
-    line-height: 20px;
-    word-spacing: 5px;
-    letter-spacing: 2px;
-    border: solid 2px gray;
-    text-align: justify;
-    grid-area: sencillos;
-    float: left;
-    /*overflow: auto;*/
-    @include sizes (400px, 400px)
-
-}
-
-@each $color in tan, antiquewhite, rgb(218, 199, 174) {
-    .fondo-#{$color}{
-        background-color: ($color);
-    }
-}
-    
 .imagen {
-    display: flex;
-    float: center;
-    justify-content: center;
-    width: 80%;
-    margin: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 100%;
+}
+
+.this {
+    margin-top: 40px;
+    padding: 50px;
+    grid-area: this;
+}
+
+.room {
+    margin-top: 40px;
+    padding: 50px;
+    grid-area: room;
+}
+
+.firts {
+    margin-top: 40px;
+    padding: 50px;
+    grid-area: firts;
+}
+
+.angles {
+    margin-top: 40px;
+    padding: 50px;
+    grid-area: angles;
+}
+
+.comedown {
+    margin-top: 40px;
+    padding: 50px;
+    grid-area: comedown;
+}
+
+.abnormal {
+    margin-top: 40px;
+    padding: 50px;
+    grid-area: abnormal;
+}
+
+.texto1{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 120%;
+    text-align: justify;
+    display: grid;
+    place-items: center;
+    padding: 40px;
+    grid-area: texto1;
+}
+
+.texto2{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 120%;
+    text-align: justify;
+    display: grid;
+    place-items: center;
+    padding: 40px;
+    grid-area: texto2;
+}
+
+.texto3{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 120%;
+    text-align: justify;
+    display: grid;
+    place-items: center;
+    padding: 40px;
+    grid-area: texto3;
+}
+
+.texto4{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 120%;
+    text-align: justify;
+    display: grid;
+    place-items: center;
+    padding: 40px;
+    grid-area: texto4;
+}
+
+.texto5{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 120%;
+    display: grid;
+    place-items: center;
+    padding: 40px;
+    grid-area: texto5;
+}
+
+.texto6{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 120%;
+    display: grid;
+    place-items: center;
+    padding: 40px;
+    grid-area: texto6;
 }
     
 .banda {
     display: grid;
     grid-template-areas: 
-    'sencillos integrantes';
-    grid-template-columns: 200px;
+    'this texto1'
+    'texto2 room'
+    'firts texto3'
+    'texto4 angles'
+    'comedown texto5'
+    'texto6 abnormal';
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20%;
     justify-items: center;
+    align-items: center;
     padding: 5%;
     margin: 5%;
 }
 
-  /*MERCHANDISING*/
+.menuBanda {
+    padding: 20px;
+    margin: 20px;
+    font-size: 110%;
+    font-family: 'Rajdhani', sans-serif;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+}
 
+.textoBanda{
+    margin-top: 10%;
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+}
+/*BANDA*/
+
+/*MERCHANDISING*/
 .merch {
     text-align: center;
     margin: 50px;
@@ -269,9 +273,9 @@ div label{
         transform: none;
     }
 }
+/*MERCHANDISING*/
 
-  /*FECHAS*/
-
+/*FECHAS*/
 .error {
     background-color:black;
     background-image: url(../media/imagenes/unnamed.6.jpg);
@@ -290,44 +294,435 @@ div label{
 .errorBoton {
     position: left;
 }
+/*FECHAS*/
 
-.menu {
-    padding: 20px;
-    font-size: 1rem;
-    text-align: center;
-    justify-items: center;/*
-    width: 35%;*/
-    justify-content: center;
+/*CONSULTAS*/
+.fondoConsultas {
+    background-image: url(../media/imagenes/fondo-cons.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-    /*MOBILE*/
+.letras2{
+    color: whitesmoke;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.consulta{
+    width: 50%;
+}
+/*CONSULTAS*/
+
+/*FOOTERS*/
+.copy {
+    p {
+        justify-content: right;
+        text-align: right;
+        color: black;
+    }
+}
+
+.footer1{
+    margin: 30px;
+    clear: left;
+}
+
+.footer2 {
+    justify-content: center;
+    align-content: center;
+    a {
+        margin: 10px;
+    }
+}
+
+.imgFooter {
+    width: 20px;
+    justify-content: center;
+}
+/*FOOTERS*/
+        
+/* TABLET */
+        
+@media only screen and (max-width: 768px) {
+    .this {
+        margin-top: 40px;
+        grid-area: this;
+    }
+    .room {
+        margin-top: 40px;
+        grid-area: room;
+    }
     
-    @media only screen and (max-width: 576px) {
-        .error {
+    .firts {
+        margin-top: 40px;
+        grid-area: firts;
+    }
+    
+    .angles {
+        margin-top: 40px;
+        grid-area: angles;
+    }
+    
+    .comedown {
+        margin-top: 40px;
+        grid-area: comedown;
+    }
+    
+    .abnormal {
+        margin-top: 40px;
+        grid-area: abnormal;
+    }
+    
+    .texto1{
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 100%;
+        width: 120%;
+        height: 100%;
+        text-align: justify;
+        display: grid;
+        place-items: center;
+        grid-area: texto1;
+    }
+    
+    .texto2{
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 100%;
+        width: 120%;
+        height: 100%;
+        text-align: justify;
+        display: grid;
+        place-items: center;
+        grid-area: texto2;
+    }
+    
+    .texto3{
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 100%;
+        width: 110%;
+        height: 100%;
+        text-align: justify;
+        display: grid;
+        place-items: center;
+        grid-area: texto3;
+    }
+    
+    .texto4{
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 100%;
+        width: 100%;
+        height: 100%;
+        text-align: justify;
+        display: grid;
+        place-items: center;
+        grid-area: texto4;
+    }
+    
+    .texto5{
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 100%;
+        width: 110%;
+        height: 100%;
+        display: grid;
+        place-items: center;
+        grid-area: texto5;
+    }
+    
+    .texto6{
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 100%;
+        width: 110%;
+        height: 100%;
+        display: grid;
+        place-items: center;
+        grid-area: texto6;
+    }
+        
+    .banda {
+        display: grid;
+        grid-template-areas: 
+        'this texto1'
+        'texto2 room'
+        'firts texto3'
+        'texto4 angles'
+        'comedown texto5'
+        'texto6 abnormal';
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 20%;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .textoBanda{
+        font-size: 80%;
+        padding: 40px;
+    }
+}
+
+/* ESCRITORIO */
+        
+@media only screen and (min-width: 992px) {
+    .this {
+        margin-top: 40px;
+        padding: 50px;
+        grid-area: this;
+    }
+    
+    .room {
+        margin-top: 40px;
+        padding: 50px;
+        grid-area: room;
+    }
+    
+    .firts {
+        margin-top: 40px;
+        padding: 50px;
+        grid-area: firts;
+    }
+    
+    .angles {
+        margin-top: 40px;
+        padding: 50px;
+        grid-area: angles;
+    }
+    
+    .comedown {
+        margin-top: 40px;
+        padding: 50px;
+        grid-area: comedown;
+    }
+    
+    .abnormal {
+        margin-top: 40px;
+        padding: 50px;
+        grid-area: abnormal;
+    }
+    
+    .texto1{
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 120%;
+        text-align: justify;
+        display: grid;
+        place-items: center;
+        padding: 40px;
+        grid-area: texto1;
+    }
+    
+    .texto2{
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 120%;
+        text-align: justify;
+        display: grid;
+        place-items: center;
+        padding: 40px;
+        grid-area: texto2;
+    }
+    
+    .texto3{
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 120%;
+        text-align: justify;
+        display: grid;
+        place-items: center;
+        padding: 40px;
+        grid-area: texto3;
+    }
+    
+    .texto4{
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 120%;
+        text-align: justify;
+        display: grid;
+        place-items: center;
+        padding: 40px;
+        grid-area: texto4;
+    }
+    
+    .texto5{
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 120%;
+        display: grid;
+        place-items: center;
+        padding: 40px;
+        grid-area: texto5;
+    }
+    
+    .texto6{
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 120%;
+        display: grid;
+        place-items: center;
+        padding: 40px;
+        grid-area: texto6;
+    }
+        
+    .banda {
+        display: grid;
+        grid-template-areas: 
+        'this texto1'
+        'texto2 room'
+        'firts texto3'
+        'texto4 angles'
+        'comedown texto5'
+        'texto6 abnormal';
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 20%;
+        justify-items: center;
+        align-items: center;
+        padding: 5%;
+        margin: 5%;
+    }
+}
+
+
+/*MOBILE*/
+
+@media only screen and (max-width: 576px) {
+    .error {
             background-color:black;
             background-image: url(../media/imagenes/fondo-celular.jpeg);
             background-repeat: no-repeat; 
             background-size: cover;
             background-position: inherit;
-        }
-        .errorLetra {
+    }
+    .errorLetra {
             color: white;
             text-align: center;
             font-size: 150%;
             margin: 2rem;
-        }
-        .errorBoton {
+    }
+    .errorBoton {
             justify-items: right-end;
             justify-content: right;
-        }
+    }
+    .this {
+        margin-top: 20px;
+        padding: 20px;
+        grid-area: this;
+    }
+    
+    .room {
+        margin-top: 20px;
+        padding: 50px;
+        grid-area: room;
+    }
+    
+    .firts {
+        margin-top: 20px;
+        padding: 50px;
+        grid-area: firts;
+    }
+    
+    .angles {
+        margin-top: 20px;
+        padding: 50px;
+        grid-area: angles;
+    }
+    
+    .comedown {
+        margin-top: 20px;
+        padding: 50px;
+        grid-area: comedown;
+    }
+    
+    .abnormal {
+        padding: 20px;
+        grid-area: abnormal;
+    }
+    
+    .texto1{
+        font-family: 'Rajdhani', sans-serif;
+        width: 110%;
+        height: 100%;
+        font-size: 90%;
+        text-align: justify;
+        display: grid;
+        place-items: center;
+        padding: 20px;
+        grid-area: texto1;
+    }
+    
+    .texto2{
+        font-family: 'Rajdhani', sans-serif;
+        width: 110%;
+        height: 100%;
+        font-size: 90%;
+        text-align: justify;
+        display: grid;
+        place-items: center;
+        padding: 20px;
+        grid-area: texto2;
+    }
+    
+    .texto3{
+        font-family: 'Rajdhani', sans-serif;
+        width: 110%;
+        height: 100%;
+        font-size: 90%;
+        text-align: justify;
+        display: grid;
+        place-items: center;
+        padding: 20px;
+        grid-area: texto3;
+    }
+    
+    .texto4{
+        font-family: 'Rajdhani', sans-serif;
+        width: 110%;
+        height: 100%;
+        font-size: 90%;
+        text-align: justify;
+        display: grid;
+        place-items: center;
+        padding: 20px;
+        grid-area: texto4;
+    }
+    
+    .texto5{
+        font-family: 'Rajdhani', sans-serif;
+        width: 110%;
+        height: 100%;
+        font-size: 90%;
+        display: grid;
+        place-items: center;
+        padding: 20px;
+        grid-area: texto5;
+    }
+    
+    .texto6{
+        font-family: 'Rajdhani', sans-serif;
+        width: 110%;
+        height: 100%;
+        font-size: 90%;
+        display: grid;
+        place-items: center;
+        padding: 20px;
+        grid-area: texto6;
     }
         
-        /* ESCRITORIO */
-        
-    @media only screen and (min-width: 992px) {
+    .banda {
+        display: grid;
+        grid-template-areas: 
+        'this'
+        'texto1'
+        'room'
+        'texto2'
+        'firts'
+        'texto3'
+        'angles'
+        'texto4'
+        'comedown'
+        'texto5'
+        'abnormal'
+        'texto6';
+        grid-template-columns: 100%;
+        grid-template-rows: 10%;
+        justify-items: center;
+        padding: 5%;
+        margin: 5%;
     }
-        
-        /* TABLET */
-        
-    @media only screen and (min-width: 768px) {
+
+    .textoBanda{
+        font-size: 50%;
+        padding: 50px;
     }
+}
